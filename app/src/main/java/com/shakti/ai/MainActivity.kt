@@ -1,0 +1,118 @@
+package com.shakti.ai
+
+import android.os.Bundle
+import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.viewpager2.adapter.FragmentStateAdapter
+import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
+import com.shakti.ai.ui.fragments.*
+
+/**
+ * MainActivity - Main entry point for ShaktiAI 3.0
+ *
+ * Features:
+ * - ViewPager2 with 8 AI module tabs
+ * - Material Design TabLayout
+ * - Smooth tab transitions
+ * - Fragment state preservation
+ */
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var viewPager: ViewPager2
+    private lateinit var tabLayout: TabLayout
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // Initialize views
+        viewPager = findViewById(R.id.view_pager)
+        tabLayout = findViewById(R.id.tab_layout)
+
+        // Setup ViewPager2 with adapter for 8 AI modules
+        val adapter = ShaktiPagerAdapter(this)
+        viewPager.adapter = adapter
+
+        // Disable off-screen page limit for better performance
+        viewPager.offscreenPageLimit = 1
+
+        // Connect TabLayout with ViewPager2
+        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+            tab.text = when (position) {
+                0 -> "🧠 Sathi AI"      // Mental health support
+                1 -> "🛡️ Guardian AI"   // Physical safety
+                2 -> "⚖️ Nyaya AI"      // Legal advisor
+                3 -> "💰 Dhan Shakti"   // Financial literacy
+                4 -> "🤝 Sangam"        // Community connections
+                5 -> "📚 Gyaan"         // Education guidance
+                6 -> "❤️ Swasthya"     // Health companion
+                7 -> "🔒 Raksha"        // DV support
+                else -> "SHAKTI"
+            }
+
+            // Set custom icon if needed (icons not yet created)
+            // TODO: Add icon drawables and uncomment
+            /*
+            tab.setIcon(
+                when (position) {
+                    0 -> R.drawable.ic_mental_health
+                    1 -> R.drawable.ic_shield
+                    2 -> R.drawable.ic_legal
+                    3 -> R.drawable.ic_finance
+                    4 -> R.drawable.ic_community
+                    5 -> R.drawable.ic_education
+                    6 -> R.drawable.ic_health
+                    7 -> R.drawable.ic_protection
+                    else -> null
+                }
+            )
+            */
+        }.attach()
+
+        // Set up smooth scrolling
+        viewPager.setPageTransformer { page, position ->
+            page.apply {
+                translationX = -position * width
+                alpha = 1 - kotlin.math.abs(position)
+            }
+        }
+
+        // Handle back press with new API
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                // If not on first page, go back to first page
+                if (viewPager.currentItem == 0) {
+                    isEnabled = false
+                    onBackPressedDispatcher.onBackPressed()
+                } else {
+                    viewPager.currentItem = viewPager.currentItem - 1
+                }
+            }
+        })
+    }
+}
+
+/**
+ * ShaktiPagerAdapter - Manages fragments for all 8 AI modules
+ */
+class ShaktiPagerAdapter(activity: AppCompatActivity) : FragmentStateAdapter(activity) {
+
+    override fun getItemCount(): Int = 8
+
+    override fun createFragment(position: Int): Fragment {
+        return when (position) {
+            0 -> SathiAIFragment()      // Mental health support
+            1 -> GuardianAIFragment()   // Physical safety
+            2 -> NyayaAIFragment()      // Legal advisor
+            3 -> DhanShaktiAIFragment() // Financial literacy
+            4 -> SangamAIFragment()     // Community connections
+            5 -> GyaanAIFragment()      // Education guidance
+            6 -> SwasthyaAIFragment()   // Health companion
+            7 -> RakshaAIFragment()     // DV support
+            else -> SathiAIFragment()   // Default
+        }
+    }
+}

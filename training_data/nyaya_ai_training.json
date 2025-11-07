@@ -1,0 +1,42 @@
+[
+  {
+    "input": "My husband beats me. What are my legal rights?",
+    "expected_output": "You have strong legal protection under Protection of Women from Domestic Violence Act, 2005. Rights: 1) File FIR under Section 498A IPC (Cruelty) 2) Get Protection Order 3) Residence Order (stay in home) 4) Monetary relief 5) Custody of children. Call Women's Helpline: 181 or NCW: 7827170170. Free legal aid available."
+  },
+  {
+    "input": "What is Section 498A IPC?",
+    "expected_output": "Section 498A IPC: Cruelty by husband or relatives. Covers: Physical/mental torture, harassment for dowry, driving woman to suicide. Punishment: Up to 3 years imprisonment + fine. Non-bailable, cognizable offense. You can file FIR at any police station. Evidence: Medical reports, witness statements, messages."
+  },
+  {
+    "input": "My boss is sexually harassing me at work",
+    "expected_output": "Sexual Harassment at Workplace (POSH) Act 2013 protects you. Steps: 1) File written complaint with Internal Committee (IC) within 3 months 2) Document incidents (dates, witnesses, messages) 3) Email everything to yourself 4) Online: SHe-Box portal (shebox.nic.in) 5) Employer MUST act within 90 days. Legal help: NCW 7827170170."
+  },
+  {
+    "input": "Can I get divorce if my husband refuses?",
+    "expected_output": "YES. Under Hindu Marriage Act 1955, you can file for divorce on grounds: Cruelty, Desertion (1 year), Adultery, Mental disorder, Incurable disease. If contested: takes 2-5 years. Faster: Mutual consent divorce (6 months). You get: Alimony, Child custody, Maintenance. Consult family lawyer. Free legal aid: NALSA."
+  },
+  {
+    "input": "Do I have rights to my father's property?",
+    "expected_output": "YES! Hindu Succession (Amendment) Act 2005: Daughters have EQUAL rights as sons in ancestral property. Rights: Share in father's property, Mother's property, Husband's property (as wife). Cannot be denied. File partition suit if needed. Consult property lawyer. This is YOUR legal right."
+  },
+  {
+    "input": "My in-laws are demanding dowry. Is this illegal?",
+    "expected_output": "ABSOLUTELY ILLEGAL. Dowry Prohibition Act 1961: Giving/Taking dowry = Imprisonment up to 5 years + Fine ₹15,000. Demanding dowry: Section 498A IPC. If harassment: File FIR, Complain to Women's Commission. Evidence: Messages, witness statements, receipts. Dowry = Crime. Report immediately: Women's Helpline 181."
+  },
+  {
+    "input": "Can I file FIR online for domestic violence?",
+    "expected_output": "YES. Options: 1) E-FIR on state police website 2) Women's helpline: 181 3) NCW online complaint: ncw.nic.in 4) Email to DCP/SP of your area 5) Call police: 100. For physical FIR: Any police station (not just local). Carry: ID proof, Evidence (photos, medical reports). Police MUST register FIR."
+  },
+  {
+    "input": "What is maintenance and how much can I claim?",
+    "expected_output": "Maintenance = Financial support. Under Section 125 CrPC: Wife can claim if unable to maintain herself. Amount: Usually 25-30% of husband's income. Factors: His income, your needs, children. File in Magistrate Court. Interim maintenance within 60 days. Also: Alimony in divorce. Consult family lawyer."
+  },
+  {
+    "input": "I want to file restraining order against my ex",
+    "expected_output": "File under Protection of Women from Domestic Violence Act. Court can order: 1) No contact/communication 2) Stay away from home/workplace 3) No harassment. Process: File petition in Magistrate Court with: Evidence of harassment (messages, calls, witnesses). Usually granted within 1-3 hearings. Violation = Arrest. Lawyer recommended."
+  },
+  {
+    "input": "Can I get custody of my children after divorce?",
+    "expected_output": "YES. Under Guardians and Wards Act: Mother's right to custody. Children under 7: Usually to mother. Court decides based on: Child's welfare, Age, Financial stability, Parent's conduct. You can claim: Full custody or Joint custody. File custody petition. Maintenance for children separate. Child's interest is priority."
+  }
+]

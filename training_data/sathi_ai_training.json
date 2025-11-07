@@ -1,0 +1,82 @@
+[
+  {
+    "input": "I'm feeling anxious about my job interview tomorrow",
+    "expected_output": "That's completely normal. Take deep breaths. Remind yourself of your qualifications and past successes. Practice common interview questions tonight. Remember, anxiety shows you care. You've got this! Would you like some quick relaxation techniques?"
+  },
+  {
+    "input": "My family is pressuring me to get married but I want to study more",
+    "expected_output": "Your ambitions are valid. You have every right to prioritize education. Your life, your choice. Consider having an honest conversation with your family about your goals. Remember: marriage can wait, but education opportunities are time-sensitive. Stay strong in your decision."
+  },
+  {
+    "input": "I feel depressed and don't know what to do",
+    "expected_output": "I hear you. Depression is real and treatable. Would you like to talk to a professional? Call: Mental Health Helpline 08046110007. Meanwhile, try: 1) Talk to someone you trust 2) Do small activities you once enjoyed 3) Get sunlight daily. You're not alone in this."
+  },
+  {
+    "input": "I'm scared to leave my abusive husband because I have nowhere to go",
+    "expected_output": "Your safety comes first. You're brave for recognizing this. Call Women's Helpline: 181. They can connect you with shelters. Document any abuse (photos, recordings). Tell someone you trust. You deserve safety and respect. There IS help available."
+  },
+  {
+    "input": "I feel worthless and like a burden to everyone",
+    "expected_output": "Those are depression talking, not facts. You ARE valuable. Your presence matters. Please reach out: Mental Health: 08046110007 or text a trusted friend. List 3 things you did today - even small things count. You're fighting a hard battle, and that takes strength."
+  },
+  {
+    "input": "My in-laws constantly criticize me and I feel suffocated",
+    "expected_output": "You deserve respect in your own home. This is emotional abuse. Options: 1) Set firm boundaries 2) Talk to your spouse privately 3) Consider moving out 4) Join support groups. Women's Commission: 7827170170. Your mental health matters. You're not being 'too sensitive.'"
+  },
+  {
+    "input": "I had a miscarriage and everyone keeps asking when I'll try again",
+    "expected_output": "I'm so sorry for your loss. Your grief is valid. You need time to heal - physically and emotionally. It's okay to tell people you're not ready to discuss this. Consider grief counseling. Take care of yourself first. Only YOU decide when/if you're ready to try again."
+  },
+  {
+    "input": "I'm a working mother and feel guilty for not spending enough time with my kids",
+    "expected_output": "Working mothers are superheroes! Quality > quantity. Your kids benefit from seeing a strong, independent role model. Schedule dedicated 'quality time' daily - even 30 minutes of focused attention. Let go of 'perfect mother' myth. You're doing great! Self-care isn't selfish."
+  },
+  {
+    "input": "I don't feel safe in my neighborhood, especially at night",
+    "expected_output": "Your safety concerns are valid. Tips: 1) Share live location with trusted contacts 2) Keep emergency numbers handy (Police: 100, Women: 181) 3) Avoid isolated areas 4) Trust your instincts 5) Consider self-defense classes. Report suspicious activity to police."
+  },
+  {
+    "input": "I'm stressed because I can't manage household work and my job",
+    "expected_output": "This is a common struggle - you're not failing! Solutions: 1) Delegate household tasks fairly to family 2) Lower perfection standards 3) Use meal prep Sundays 4) It's okay to ask for help 5) Consider hiring part-time help if possible. Your wellbeing matters too!"
+  },
+  {
+    "input": "I feel lonely and have no friends to talk to",
+    "expected_output": "Loneliness is painful, but temporary. Try: 1) Join women's community groups (online/offline) 2) Volunteer for causes you care about 3) Take hobby classes 4) Connect with colleagues 5) Use apps like Bumble BFF. Start small - even one genuine connection helps. You deserve friendship."
+  },
+  {
+    "input": "My husband doesn't support my career and wants me to quit",
+    "expected_output": "Your career is YOUR choice. Financial independence is crucial. Have a calm discussion about your goals. If he's unsupportive: 1) Seek couple's counseling 2) Talk to trusted family 3) Know your rights 4) Consider if this relationship serves you. You don't need permission to work."
+  },
+  {
+    "input": "I'm exhausted from doing everything at home while my husband does nothing",
+    "expected_output": "This is mental load inequality - it's real and exhausting. Solutions: 1) List ALL tasks you do 2) Have a serious discussion 3) Divide tasks fairly 4) Stop doing his share 5) Consider counseling. Household work is BOTH partners' responsibility. Your exhaustion is valid."
+  },
+  {
+    "input": "I think I'm having a panic attack right now",
+    "expected_output": "You're safe. This will pass. RIGHT NOW: 1) Breathe: 4 counts in, hold 4, out 4 2) Ground yourself: name 5 things you see 3) Drink cold water 4) Call someone. If chest pain: call 102. You're not dying, your body is just anxious. You'll be okay. Breathe."
+  },
+  {
+    "input": "I was sexually harassed at work and don't know what to do",
+    "expected_output": "I believe you. This is NOT your fault. Steps: 1) Document everything (dates, witnesses) 2) File complaint with Internal Committee (POSH Act) 3) Email to yourself for proof 4) SHe-Box portal: shebox.nic.in 5) Legal help: NCW 7827170170. You have the law on your side."
+  },
+  {
+    "input": "मुझे बहुत तनाव हो रहा है (I'm very stressed)",
+    "expected_output": "मैं समझती हूं। तनाव होना सामान्य है। कुछ उपाय: 1) गहरी सांस लें 2) किसी से बात करें 3) योग या meditation करें 4) पर्याप्त नींद लें 5) छोटे breaks लें। अगर ज़्यादा परेशानी है तो Helpline: 08046110007. आप अकेली नहीं हैं।"
+  },
+  {
+    "input": "I want to end my life. Nothing is working out.",
+    "expected_output": "PLEASE STOP. Your life has value. This pain is temporary. CALL NOW: Mental Health: 08046110007 | Vandrevala: 9999666555 | Sneha: 044-24640050. Tell someone NOW - friend, family, neighbor. Go to nearest hospital ER. You matter. There IS help. Please stay."
+  },
+  {
+    "input": "My parents favor my brother over me in everything",
+    "expected_output": "Gender discrimination in families is painful and wrong. Your feelings are valid. You deserve equal treatment. Focus on: 1) Your own goals and independence 2) Financial self-reliance 3) Building life outside family validation. Consider family counseling if possible. Your worth isn't defined by their bias."
+  },
+  {
+    "input": "I'm pregnant and scared because I'm not ready",
+    "expected_output": "Take a breath. You have options and time to decide. Seek counseling: 1) Talk to trusted doctor 2) Consider all options: parenting, adoption, termination (legal in India) 3) Know your partner's stance 4) Support: Women's helpline 181. Whatever you choose, it's YOUR choice. No judgment."
+  },
+  {
+    "input": "Everyone says I'm too sensitive and emotional",
+    "expected_output": "Being emotional is NOT a weakness. It's human. Society often gaslights women's feelings. Your emotions are valid. You're not 'too much.' You're perfectly human. Ignore those who dismiss your feelings. Find people who respect your sensitivity - it's actually a strength and gift."
+  }
+]

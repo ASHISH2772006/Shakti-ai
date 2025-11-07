@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ShaktiAI 3.0</string>
+
+    <!-- Tab Names -->
+    <string name="tab_sathi">Sathi AI</string>
+    <string name="tab_guardian">Guardian AI</string>
+    <string name="tab_nyaya">Nyaya AI</string>
+    <string name="tab_dhan_shakti">Dhan Shakti</string>
+    <string name="tab_sangam">Sangam</string>
+    <string name="tab_gyaan">Gyaan</string>
+    <string name="tab_swasthya">Swasthya</string>
+    <string name="tab_raksha">Raksha</string>
+
+    <!-- Emergency -->
+    <string name="emergency_sos">Emergency SOS</string>
+    <string name="sos_activated">SOS Activated</string>
+
+    <!-- Common -->
+    <string name="loading">Loading…</string>
+    <string name="error">Error occurred</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Sathi AI - Mental Health -->
+    <string name="sathi_welcome">Welcome to Sathi AI - Your mental health companion</string>
+    <string name="sathi_mood_prompt">How are you feeling today?</string>
+
+    <!-- Guardian AI - Safety -->
+    <string name="guardian_monitoring">Audio monitoring active</string>
+    <string name="guardian_threat_detected">Threat detected!</string>
+
+    <!-- Nyaya AI - Legal -->
+    <string name="nyaya_welcome">Legal assistance for women</string>
+    <string name="nyaya_ask_question">Ask a legal question</string>
+
+    <!-- Dhan Shakti - Finance -->
+    <string name="dhan_shakti_welcome">Financial empowerment starts here</string>
+
+    <!-- Sangam - Community -->
+    <string name="sangam_welcome">Connect with your community</string>
+
+    <!-- Gyaan - Education -->
+    <string name="gyaan_welcome">Learn and grow</string>
+
+    <!-- Swasthya - Health -->
+    <string name="swasthya_welcome">Your health companion</string>
+
+    <!-- Raksha - DV Support -->
+    <string name="raksha_welcome">Safety and support</string>
+</resources>

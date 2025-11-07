@@ -1,0 +1,42 @@
+[
+  {
+    "input": "I want to start saving but don't know how",
+    "expected_output": "Great decision! Start with: 1) Open Savings Account (preferably women's account with benefits) 2) Save 20% of income automatically 3) Emergency fund: 6 months expenses 4) Use 50-30-20 rule: 50% needs, 30% wants, 20% savings. Start small - even ₹500/month grows! Banks: SBI Mahila, ICICI, HDFC women accounts."
+  },
+  {
+    "input": "What government schemes are available for women entrepreneurs?",
+    "expected_output": "Top schemes: 1) Mudra Loan: Up to ₹10 lakh, no collateral 2) Stand-Up India: ₹10L-₹1Cr for SC/ST/Women 3) Mahila Udyam Nidhi: Manufacturing businesses 4) Stree Shakti Package (SBI) 5) Cent Kalyani (Central Bank). Apply at: Banks, SIDBI, udyamimitra.in. Required: Business plan, Aadhar, PAN."
+  },
+  {
+    "input": "How can I invest ₹5000 per month safely?",
+    "expected_output": "Safe options for ₹5000/month: 1) PPF: ₹500-₹1.5L/year, 7.1% interest, tax-free 2) Sukanya Samriddhi (for daughter): 8.2% interest 3) Mutual Fund SIP: Balanced funds 4) Recurring Deposit: Guaranteed returns 5) Gold SIP: Small amounts. Diversify: ₹2000 PPF + ₹2000 MF + ₹1000 RD. Start now!"
+  },
+  {
+    "input": "I need loan for my small business. Where should I apply?",
+    "expected_output": "Best options: 1) Mudra Loan (Shishu): Up to ₹50k, minimal paperwork 2) Bank of India Star Mahila: Up to ₹20L 3) SBI Stree Shakti 4) Local cooperative banks 5) NBFCs. Documents: Business plan, Aadhar, PAN, Bank statement. Interest: 8-12%. Apply: Nearest bank branch or mudra.org.in. Success rate high for women!"
+  },
+  {
+    "input": "What is the difference between savings and investment?",
+    "expected_output": "Savings = For short-term, safe, easily accessible (Bank account, FD). Returns: 3-7%. Investment = For long-term wealth, some risk, higher returns (Stocks, MF, Real estate). Returns: 10-15%+. Rule: Keep 6-month emergency savings, THEN invest rest. Both are important for financial security!"
+  },
+  {
+    "input": "How do I start a business with no money?",
+    "expected_output": "Start with: 1) Skill-based business (tailoring, cooking, tutoring, beauty) - zero investment 2) Mudra loan: up to ₹50k 3) Self-Help Groups (SHGs): Micro-loans 4) Online business: Meesho, Shopsy (no inventory) 5) Services: Freelancing, consulting. Begin small, reinvest profits. Government training: NRLM, SEWA."
+  },
+  {
+    "input": "What is SIP and should I invest in it?",
+    "expected_output": "SIP = Systematic Investment Plan in Mutual Funds. You invest fixed amount monthly (₹500+). Benefits: 1) Rupee cost averaging 2) Disciplined saving 3) Compounding 4) Affordable. Returns: 12-15% long-term. Good for: Wealth creation, Goals. Start with: Index funds or Large-cap funds. Invest for minimum 5 years. Yes, recommended!"
+  },
+  {
+    "input": "I earn ₹15000 per month. How should I budget?",
+    "expected_output": "Budget for ₹15k: 1) Needs (60%): ₹9000 (rent, food, bills) 2) Savings (20%): ₹3000 (PPF/RD/MF) 3) Wants (20%): ₹3000 (shopping, entertainment). Emergency fund priority. Track expenses daily. Cut: Eating out, unused subscriptions. Increase income: Side gig, upskilling. Save FIRST, spend rest!"
+  },
+  {
+    "input": "What is tax saving investment for women?",
+    "expected_output": "Section 80C tax-saving options: 1) PPF: ₹1.5L limit, 7.1%, tax-free 2) ELSS Mutual Funds: Best returns, 3-year lock 3) Sukanya Samriddhi: For daughters 4) Life Insurance 5) NSC 6) Tax-Saver FD. Women-specific: No tax on income up to ₹2.5L. Invest in PPF (safe) + ELSS (growth)."
+  },
+  {
+    "input": "How do I protect myself from financial fraud?",
+    "expected_output": "Protection tips: 1) Never share: OTP, CVV, PIN, Password 2) Banks NEVER call asking for OTP 3) Check HTTPS before payment 4) Don't click unknown links 5) Use strong passwords 6) Enable 2-factor authentication. If fraud: Block card immediately, File FIR, Report to bank, Cybercrime: cybercrime.gov.in. Prevention is key!"
+  }
+]
