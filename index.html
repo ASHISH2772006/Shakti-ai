@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="SHAKTI AI - AI-Powered Emergency Safety App for Women with Voice-Activated HELP Detection">
+    <meta name="keywords"
+          content="women safety, emergency app, voice detection, AI assistant, help detection">
+    <title>SHAKTI AI - Emergency Safety App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            animation: fadeInDown 1s ease;
+        }
+
+        .logo {
+            font-size: 4em;
+            margin-bottom: 10px;
+            animation: bounce 2s infinite;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            font-size: 1.5em;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        /* Download Button */
+        .download-section {
+            text-align: center;
+            margin: 40px 0;
+            animation: fadeInUp 1s ease;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            padding: 25px 50px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.8em;
+            font-weight: 600;
+            margin: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .secondary-btn {
+            background: linear-gradient(45deg, #2196F3, #1976D2);
+        }
+
+        /* Features Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .feature-desc {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 50px;
+            margin: 60px 0;
+            animation: fadeIn 2s ease;
+        }
+
+        .how-it-works h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .step {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #FF6B6B, #FF4757);
+            border-radius: 50%;
+            line-height: 60px;
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .step-title {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        /* Requirements */
+        .requirements {
+            text-align: center;
+            margin: 60px 0;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+        }
+
+        .requirements h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .req-grid {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .req-item {
+            font-size: 1.2em;
+        }
+
+        .req-icon {
+            font-size: 2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-links {
+            margin: 20px 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 0.7;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            .tagline { font-size: 1.2em; }
+            .download-btn { 
+                padding: 20px 40px;
+                font-size: 1.4em;
+            }
+            .features { grid-template-columns: 1fr; }
+            .steps { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Header -->
+    <header>
+        <div class="logo">🛡️</div>
+        <h1>SHAKTI AI</h1>
+        <p class="tagline">AI-Powered Emergency Safety App for Women</p>
+        <p style="font-size: 1.2em; opacity: 0.8;">Voice-Activated HELP Detection • Automatic
+            Emergency Response</p>
+    </header>
+
+    <!-- Download Section -->
+    <div class="download-section">
+        <a href="https://github.com/ASHISH2772006/Shakti-ai/releases/latest/download/app-release.apk"
+           class="download-btn">
+            📥 Download APK (50MB)
+        </a>
+        <br>
+        <a href="https://github.com/ASHISH2772006/Shakti-ai" class="download-btn secondary-btn">
+            🔗 View on GitHub
+        </a>
+    </div>
+
+    <!-- Features -->
+    <div class="features">
+        <div class="feature-card">
+            <div class="feature-icon">🗣️</div>
+            <div class="feature-title">Voice-Activated Detection</div>
+            <div class="feature-desc">
+                Say "HELP" 3 times to trigger automatic emergency response. Works even with
+                whispers!
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🚨</div>
+            <div class="feature-title">Instant Emergency Response</div>
+            <div class="feature-desc">
+                Automatic alerts to emergency contacts, police, and nearby users via BLE mesh
+                network.
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📹</div>
+            <div class="feature-title">Evidence Recording</div>
+            <div class="feature-desc">
+                Automatically records audio and video evidence with tamper-proof blockchain
+                anchoring.
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🔗</div>
+            <div class="feature-title">Blockchain Proof</div>
+            <div class="feature-desc">
+                All evidence is anchored on Aptos blockchain ensuring integrity and authenticity.
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📡</div>
+            <div class="feature-title">BLE Mesh Networking</div>
+            <div class="feature-desc">
+                Alerts nearby SHAKTI AI users automatically, creating a community safety network.
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <div class="feature-title">6 AI Assistants</div>
+            <div class="feature-desc">
+                Legal, Health, Safety, Education, Knowledge, and Guardian AI assistants to help you.
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🧮</div>
+            <div class="feature-title">Stealth Calculator Mode</div>
+            <div class="feature-desc">
+                Disguised as a calculator app for your safety. Hidden protection when you need it
+                most.
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <div class="feature-title">Privacy & Security</div>
+            <div class="feature-desc">
+                All data encrypted and stored locally. No data shared without your explicit consent.
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <div class="how-it-works">
+        <h2>🆘 How to Use in Emergency</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-title">Open Calculator</div>
+                <div class="feature-desc">Open the stealth calculator mode for hidden protection
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-title">Say "HELP"</div>
+                <div class="feature-desc">Say "HELP" loudly and clearly (works with whispers too)
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-title">Repeat 2 More Times</div>
+                <div class="feature-desc">Say "HELP" two more times within 10 seconds (total 3x)
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-title">Emergency Triggered</div>
+                <div class="feature-desc">App automatically alerts contacts, records evidence, and
+                    notifies nearby users
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Requirements -->
+    <div class="requirements">
+        <h2>📱 Requirements</h2>
+        <div class="req-grid">
+            <div class="req-item">
+                <span class="req-icon">📱</span>
+                Android 8.0+
+            </div>
+            <div class="req-item">
+                <span class="req-icon">💾</span>
+                50MB Storage
+            </div>
+            <div class="req-item">
+                <span class="req-icon">🎤</span>
+                Microphone
+            </div>
+            <div class="req-item">
+                <span class="req-icon">📷</span>
+                Camera
+            </div>
+        </div>
+    </div>
+
+    <!-- Installation Instructions -->
+    <div class="how-it-works">
+        <h2>📥 Installation Instructions</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-title">Download APK</div>
+                <div class="feature-desc">Click the download button above to get the APK file</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-title">Enable Unknown Sources</div>
+                <div class="feature-desc">Go to Settings → Security → Enable "Install from Unknown
+                    Sources"
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-title">Install APK</div>
+                <div class="feature-desc">Open the downloaded APK file and tap "Install"</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-title">Grant Permissions</div>
+                <div class="feature-desc">Grant all requested permissions for full functionality
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p style="font-size: 1.3em; margin-bottom: 20px;">
+            🛡️ <strong>Empowering Women's Safety with AI</strong> 🛡️
+        </p>
+        <div class="footer-links">
+            <a href="https://github.com/ASHISH2772006/Shakti-ai" target="_blank">GitHub</a>
+            <a href="https://github.com/ASHISH2772006/Shakti-ai/releases"
+               target="_blank">Releases</a>
+            <a href="https://github.com/ASHISH2772006/Shakti-ai/issues" target="_blank">Report
+                Issues</a>
+        </div>
+        <p style="opacity: 0.7; margin-top: 30px;">
+            Version 1.0.0 | Built with ❤️ by Ashish<br>
+            © 2024 SHAKTI AI. All rights reserved.
+        </p>
+    </footer>
+</div>
+</body>
+</html>
